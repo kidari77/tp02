@@ -4,20 +4,21 @@
       <meta charset="UTF-8">
    </head>
    <body>
-      <form action="http://www.iut-fbleau.fr/sitebp/get.php" method="get">
+      <form action="http://www.iut-fbleau.fr/sitebp/get.php" method="get" enctype="application/x-www-form-urlencoded">
          <label for="mail">Mail</label>
-         <input type="text" id="mail" required>
+         <input type="text" name="mail" id="mail" required> <br/>
          <label for="sport">Sport</label>
-         <input type="checkbox" id="mail">
+         <input type="checkbox" name="Sport" id="Sport"> <br/>
          <label for="musique">Musique</label>
-         <input type="checkbox" id="mail">
+         <input type="checkbox" name="Musique" id="musique"> <br/>
          <label for="lecture">Lecture</label>
-         <input type="checkbox" id="mail">
+         <input type="checkbox" name="Lecture" id="lecture"> <br/>
          <label for="cinéma">Cinéma</label>
-         <input type="checkbox" id="mail">
+         <input type="checkbox" name="cinema" id="cinema"> <br/> 
          <label for="informatique">Informatique</label>
-         <input type="checkbox" id="mail">
-         <input type="submit" name="soumission" value="envoyer">
+         <input type="checkbox" name="informatique" id="informatique"> <br/>
+         <input type="submit" name="soumission" value="envoyer"/>
+        <input type="reset" name="soum" value="reset"/>
       </form>
    </body>
 </html>
